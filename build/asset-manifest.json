@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bfcbe2a3.css",
+    "main.js": "/static/js/main.db99d19f.js",
+    "static/media/image2.jpg": "/static/media/image2.34f22cdb0587ee2729f9.jpg",
+    "static/media/1000143227.jpg": "/static/media/1000143227.fc3d1af31d9cfe7ce44d.jpg",
+    "static/media/image1.jpg": "/static/media/image1.f358fb752efaf7669516.jpg",
+    "static/media/1000143244.jpg": "/static/media/1000143244.b6ac5232b6ca0ae3de31.jpg",
+    "static/media/image3.jpg": "/static/media/image3.78a73c5022399dc6a351.jpg",
+    "static/media/1000143225.jpg": "/static/media/1000143225.3be99b035c554c166760.jpg",
+    "static/media/1000143128.jpg": "/static/media/1000143128.749aeeb752848a0e42c3.jpg",
+    "static/media/1000143254.jpg": "/static/media/1000143254.2685c61807af9dbe17e9.jpg",
+    "static/media/1000143174.jpg": "/static/media/1000143174.1a574bcf73151d83117b.jpg",
+    "static/media/1000143203.jpg": "/static/media/1000143203.47fcb251bb4f7559824d.jpg",
+    "static/media/1000143171.jpg": "/static/media/1000143171.7e06b1d1a5076cb364d9.jpg",
+    "static/media/1000143188.jpg": "/static/media/1000143188.cb00cd5866ac95fe100c.jpg",
+    "static/media/1000143196.jpg": "/static/media/1000143196.1ac594b2ab52a19bea3f.jpg",
+    "static/media/1000143168.jpg": "/static/media/1000143168.279b44fa23a125328852.jpg",
+    "static/media/1000143256.jpg": "/static/media/1000143256.121d54e7a238d77f37f0.jpg",
+    "static/media/1000143218.jpg": "/static/media/1000143218.df43450e253129ff9b82.jpg",
+    "static/media/1000143197.jpg": "/static/media/1000143197.d577bc21c56dd2aa1e30.jpg",
+    "static/media/1000143216.jpg": "/static/media/1000143216.c8e408ba76ac9a986174.jpg",
+    "static/media/1000143236.jpg": "/static/media/1000143236.fbf78dde9bf461e577df.jpg",
+    "static/media/1000143234.jpg": "/static/media/1000143234.a8d0fe9117bd29831ed6.jpg",
+    "static/media/1000143238.jpg": "/static/media/1000143238.a87ff628a50a2cc68ba9.jpg",
+    "static/media/1000143195.jpg": "/static/media/1000143195.08a0afce251be4393f39.jpg",
+    "static/media/nick.jpg": "/static/media/nick.5047c4440aa7d2a04804.jpg",
+    "static/media/f3.png": "/static/media/f3.dab6b940b2a269768eb4.png",
+    "static/media/dzikonews2.jpg": "/static/media/dzikonews2.2e66316df0215c6c929f.jpg",
+    "static/media/dzikonews1.jpg": "/static/media/dzikonews1.89469b78f826c831439f.jpg",
+    "static/media/ecologo.jpg": "/static/media/ecologo.007c6cfd199737d38505.jpg",
+    "static/media/gigi.jpg": "/static/media/gigi.0addb2f790d807e39625.jpg",
+    "static/media/ecologo2.jpg": "/static/media/ecologo2.719763b25b18854d1532.jpg",
+    "index.html": "/index.html",
+    "main.bfcbe2a3.css.map": "/static/css/main.bfcbe2a3.css.map",
+    "main.db99d19f.js.map": "/static/js/main.db99d19f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfcbe2a3.css",
+    "static/js/main.db99d19f.js"
+  ]
+}

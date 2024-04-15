@@ -1,0 +1,61 @@
+.gallery-container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.gallery-btn.prev {
+    left: -7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-btn.next {
+    right: -7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-text {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    bottom: -25px;
+}
+
+
+
+/* Media queries for small devices */
+
+@media screen and (max-width: 1024px) {
+
+    .gallery-btn {
+        margin: 0; /* Remove margins for small devices */
+    }
+
+    .gallery-btn.prev {
+        left: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .gallery-btn.next {
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
