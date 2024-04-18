@@ -1,4 +1,24 @@
-/* CSS */
+
+#home {
+    padding-top: 110px; /* Adjust based on your navbar height */
+}
+
+
+@keyframes iconMovement {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+  }
+  
 .hero {
     position: relative;
     height: 100vh;
@@ -68,6 +88,9 @@
                 padding-bottom: 20px; /* Add some bottom padding to the hero section */
             }
         
+            #home {
+                padding-top: 90px; /* Adjust based on your navbar height */
+            }
             .carousel {
                 position: relative;
                 width: 100%;

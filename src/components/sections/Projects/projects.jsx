@@ -19,8 +19,8 @@ const Projects = () => {
     return (
         <div>
             <Navbar />
-            <div className="bg-blue-700 py-4"></div>
-            <section id="home" className="py-8 lg:w-3/5 mx-auto sm:w-60 px-6"> {/* Set width to 90% on small screens */}
+            <div className="bg-sky-900 py-4"></div>
+            <section id="pro" className="py-8 lg:w-3/5 mx-auto sm:w-60 px-6"> {/* Set width to 90% on small screens */}
                 <img src={showHomeImage1 ? attentionGrabberImage1 : attentionGrabberImage2} alt="Home Image" />
             </section>
             <section className="max-w-3xl mx-auto py-4 sm:max-w-50 mx-5 px-0"> {/* Set width to 90% on small screens */}

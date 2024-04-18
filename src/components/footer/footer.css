@@ -1,9 +1,19 @@
-@media (max-width: 640px) {
-    .footer-content > div {
-        margin-left: -2rem; /* Adjust the value as needed */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+/* Media Query for Small Devices */
+@media screen and (max-width: 600px) {
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
-    .footer-content > div .news-link {
-        margin-left: -2rem !important; /* Adjust the value as needed */
+    .footer_socials {
+        margin-bottom: 2.6rem;
     }
 }

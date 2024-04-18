@@ -5,11 +5,11 @@ import './footer.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-blue-900 text-white py-20">
+        <footer className="bg-sky-900 text-white py-20">
             <div className="container mx-auto">
                 {/* Navigation Links */}
                 <div className="footer-content flex flex-col lg:flex-row justify-center items-center mb-8">
-                    <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-8 lg:mb-2">
+                    <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-8 lg:mb-2 nav-links">
                         <NavLink to="/" className="text-white mb-2 lg:mb-0 lg:mr-4 text-center lg:hover:text-blue-500 block" activeClassName="font-bold">Home</NavLink>
                         <NavLink to="/about" className="text-white mb-2 lg:mb-0 lg:mr-4 text-center lg:hover:text-blue-500 block" activeClassName="font-bold">About</NavLink>
                         <NavLink to="/projects" className="text-white mb-2 lg:mb-0 lg:mr-4 text-center ml-2 lg:hover:text-blue-500 block" activeClassName="font-bold">Projects</NavLink>

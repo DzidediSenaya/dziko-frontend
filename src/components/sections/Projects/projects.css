@@ -1,3 +1,9 @@
+
+#pro {
+    padding-top: 120px; /* Adjust based on your navbar height */
+}
+
+
 .gallery-container {
     position: relative;
     max-width: 100%;
