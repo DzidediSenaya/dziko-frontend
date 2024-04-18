@@ -7,7 +7,7 @@ export default function Admin() {
             <div>
                 <section class="flex bg-gray-100 min-h-screen">
                     <aside class="hidden sm:flex sm:flex-col">
-                        <a href="#" class="inline-flex items-center justify-center h-20 w-20 bg-[#007AFF] hover:bg-[#007AFF] focus:bg-[#007AFF]">
+                        <a href="#" class="inline-flex items-center justify-center h-20 w-20 bg-[#007AFF] hover:bg-indigo-200 focus:bg-indigo-200">
                             <img src={dziko}></img>
                         </a>
                         <div class="flex-grow flex flex-col justify-between text-gray-500 bg-[#0C172C]">

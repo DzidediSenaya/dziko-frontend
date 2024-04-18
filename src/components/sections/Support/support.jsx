@@ -3,6 +3,7 @@ import { PaystackButton } from "react-paystack";
 import Navbar from "../../navbar/navbar";
 import Footer from "../../footer/footer";
 import VolunteerForm from "./volunteer.jsx";
+import { FaHandHolding, FaDonate } from 'react-icons/fa';
 
 const Support = () => {
   const [showDonationForm, setShowDonationForm] = useState(false);
@@ -47,16 +48,20 @@ const Support = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-sky-900 py-4 "></div>
+      <div className="bg-indigo-900 py-4 "></div>
       <section className="py-10" style={{ padding: "0 20px" }}>
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-8 mt-4 ml-2 lg:text-center pt-32">
-            Support Our Cause
-          </h2>
+          <div className="relative flex items-center justify-center">
+            <h2 className="text-4xl font-bold mb-8 mt-4 lg:text-center pt-32 text-indigo-900 mb-8 mr-16">
+              Support Our Cause
+            </h2>
+          </div>
 
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-4">Make a Donation</h3>
+            <div className="mb-12 relative">
+              <FaDonate className="text-5xl text-indigo-900 ml-2" />
+              <h3 className="text-xl font-semibold mb-4 text-indigo-900">Make a Donation</h3>
               <p className="text-l italic mb-4">
                 Your generosity fuels our mission to protect the planet and
                 inspire future generations. Please take a moment to express
@@ -69,7 +74,7 @@ const Support = () => {
                   <form
                     id="donation-form"
                     onSubmit={handleDonationSubmit}
-                    className="bg-sky-900 p-8 rounded-lg shadow-md"
+                    className="bg-indigo-900 p-8 rounded-lg shadow-md"
                   >
                     <label
                       htmlFor="donor-email"
@@ -111,13 +116,13 @@ const Support = () => {
                         onClose={handlePaymentClose}
                         className="donate-button"
                       >
-                        <button className="w-full bg-white hover:bg-sky-200 text-sky-900 font-bold py-2 px-4 rounded-md cursor-pointer">
+                        <button className="w-full bg-white hover:bg-sky-200 text-indigo-900 font-bold py-2 px-4 rounded-md cursor-pointer">
                           Donate
                         </button>
                       </PaystackButton>
                     )}
                     {paymentSuccess && (
-                      <p className="text-sky-900">
+                      <p className="text-white font-bold italic">
                         Thank you for your donation!
                       </p>
                     )}
@@ -126,13 +131,14 @@ const Support = () => {
               )}
               <button
                 onClick={toggleDonationForm}
-                className="bg-sky-900 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300 mt-2"
+                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mt-2"
               >
                 {showDonationForm ? "Hide Donation Form" : "Show Donation Form"}
               </button>
             </div>
             <div className="mb-12">
-              <h3 className="text-xl font-semibold mb-4 ">Volunteer with Us</h3>
+              <FaHandHolding className="text-5xl text-indigo-900 ml-2" />
+              <h3 className="text-xl font-semibold mb-4 text-indigo-900">Volunteer with Us</h3> 
               <p className="text-l italic mb-4">
                 Join us in making a positive impact on the environment by
                 volunteering with our team. Your passion and dedication can
@@ -142,7 +148,7 @@ const Support = () => {
               {showVolunteerForm && <VolunteerForm />}
               <button
                 onClick={toggleVolunteerForm}
-                className="bg-sky-900 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300 mt-2 mb-6"
+                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mt-2 mb-6 "
               >
                 {showVolunteerForm ? "Hide Volunteer Form" : "Show Volunteer Form"}
               </button>

@@ -61,9 +61,9 @@ const About = () => {
             <div className="bg-sky-900 py-4"></div>
 
             <section id="mission" className="max-w-4xl mx-auto px-4 py-8 pt-56">
-                <h1 className="text-3xl font-bold mb-4">About DZIKO CENTRE FOR CLIMATE JUSTICE (DZIKO CCJ) {showIcon === 'lightbulb' && <FaRegLightbulb className="inline animate-bounce" />}</h1>
+                <h1 className="text-3xl font-bold mb-4 text-indigo-800">About DZIKO CENTRE FOR CLIMATE JUSTICE (DZIKO CCJ) {showIcon === 'lightbulb' && <FaRegLightbulb className="inline animate-bounce" />}</h1>
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2">Our Mission {showIcon === 'lightbulb' && <FaGlobe className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Mission {showIcon === 'lightbulb' && <FaGlobe className="inline animate-bounce" />}</h2>
                     <p className="text-lg text-gray-700">
                         DZIKO CCJ was founded in January 2024 with a bold mission: to empower the next generation of
                         environmental leaders and activists. We believe that young people have the power to drive positive change in
@@ -76,7 +76,7 @@ const About = () => {
 
             <section id="vision" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2">Our Vision {showIcon === 'eye' && <FaEye className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Vision {showIcon === 'eye' && <FaEye className="inline animate-bounce" />}</h2>
                     <p className="text-lg text-gray-700">
                         Our vision is a world where every young person is empowered to take action to protect and preserve the
                         environment. We envision a future where sustainability is not just a buzzword but a way of life, and where every individual
@@ -86,7 +86,7 @@ const About = () => {
             </section>
 
             <section id="approach" className="max-w-4xl mx-auto px-4 py-8">
-                <div className="mb-8">
+                <div className="mb-8 text-indigo-800">
                     <h2 className="text-2xl font-bold mb-2">Our Approach {showIcon === 'users' && <FaUsers className="inline animate-bounce" />}</h2>
                     <p className="text-lg text-gray-700">
                         At DZIKO CCJ, we take a multi-faceted approach to environmental activism and education. We
@@ -99,13 +99,13 @@ const About = () => {
 
             <section id="team" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2">Meet Our Expert Team: Driven Professionals Crafting Sustainable Solutions </h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Meet Our Expert Team: Driven Professionals Crafting Sustainable Solutions </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-white p-6 rounded-lg shadow flex flex-col items-center">
-                            <h2 className="text-xl font-bold mb-2">Dzidedi Senaya</h2>
-                            <p className="mb-2"> Co-founder</p>
+                            <h2 className="text-xl font-bold mb-2 text-indigo-800">Dzidedi Senaya</h2>
+                            <p className="mb-2 text-indigo-800 italic font-bold"> Co-founder</p>
                             <img className="w-full h-auto rounded-md mb-4" src={Image1} alt="Dzidedi Senaya" style={{ maxWidth: '70%' }} />
-                            <button onClick={toggleFullProfile1} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-md transition duration-300">
+                            <button onClick={toggleFullProfile1} className="bg-indigo-800 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300">
                                 {showFullProfile1 ? 'Hide Full Profile' : 'View Full Profile'}
                             </button>
                             {showFullProfile1 && (
@@ -121,10 +121,10 @@ const About = () => {
                             )}
                         </div>
                         <div className="bg-white p-3 rounded-lg shadow flex flex-col items-center">
-                            <h2 className="text-xl font-bold mb-4 mt-1">Nicholas Adomako</h2>
-                            <p className="mb-2"> Co-founder</p>
+                            <h2 className="text-xl font-bold mb-4 mt-1 text-indigo-800">Nicholas Adomako</h2>
+                            <p className="mb-2 text-indigo-800 italic font-bold"> Co-founder</p>
                             <img className="w-full h-auto rounded-md mb-4" src={Image2} alt="Nicholas Adomako" style={{ maxWidth: '70%' }} />
-                            <button onClick={toggleFullProfile2} className="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-md transition duration-300">
+                            <button onClick={toggleFullProfile2} className="bg-indigo-800 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300">
                                 {showFullProfile2 ? 'Hide Full Profile' : 'View Full Profile'}
                             </button>
                             {showFullProfile2 && (
@@ -145,7 +145,7 @@ const About = () => {
 
             <section id="partners" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2">Our Partners {showIcon === 'user-friends' && <FaUserFriends className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Partners {showIcon === 'user-friends' && <FaUserFriends className="inline animate-bounce" />}</h2>
                     <p className="text-lg text-gray-700">
                         DZIKO CCJ collaborates with a range of partners, including businesses, non-profits, government agencies,
                         and educational institutions, to maximize our impact and reach. Together, we work towards common goals and
@@ -156,7 +156,7 @@ const About = () => {
 
             <section className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2">Join Us {showIcon === 'handshake' && <FaHandshake className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Join Us {showIcon === 'handshake' && <FaHandshake className="inline animate-bounce" />}</h2>
                     <p className="text-lg text-gray-700">
                         Are you passionate about protecting the environment and making a difference in your community? Join DZIKO CCJ
                         today and become part of a growing movement of young people who are dedicated to saving the planet.
@@ -166,7 +166,6 @@ const About = () => {
             </section>
 
             <Footer />
-            <div className="bg-blue-900 py-4"></div>
         </div>
     );
 }
