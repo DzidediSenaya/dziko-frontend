@@ -6,7 +6,7 @@ import Footer from '../../footer/footer';
 import image1 from '../../../assets/images/image1.jpg';
 import image2 from '../../../assets/images/image2.jpg';
 import image3 from '../../../assets/images/image3.jpg';
-import { FaInfoCircle, FaHandsHelping, FaEnvelope,FaNewspaper, FaSearch } from 'react-icons/fa'; 
+import { FaInfoCircle, FaHandsHelping, FaEnvelope, FaNewspaper, FaSearch } from 'react-icons/fa';
 
 
 function Home() {
@@ -102,10 +102,10 @@ function Home() {
 
   return (
     <div>
-            <Navbar />
-            <div className="bg-indigo-800 py-4"></div>
+      <Navbar />
+      <div className="bg-indigo-800 py-4"></div>
 
-      <section id="home" className="hero">
+      <section id="home" className="hero relative mb-20">
         <div className="carousel">
           {images.map((image, index) => (
             <div key={index} className={`slide ${currentImage === index ? 'active' : ''}`}>
@@ -119,17 +119,21 @@ function Home() {
             <span key={index} className={`dot ${currentImage === index ? 'active' : ''}`} onClick={() => changeImage(index)}></span>
           ))}
         </div>
+        <div className='absolute top-0 left-0 flex flex-col items-center justify-center h-full w-full bg-black/50 text-white'>
+        <div className="text-6xl font-bold flex flex-col gap-y-4 w-3/5 text-center items-center ">
+          <p>Welcome to Dziko Centre for</p>
+          <span className="bg-indigo-900 w-fit p-4"> Climate Justice</span>
+        </div>
+        </div>
       </section>
 
-      <section id="about" className="bg-white py-20 text-center w-1/2 mx-auto">
-        <div className="text-3xl text-indigo-800 font-bold italic mt-10 mb-10">
-          Welcome to Dziko Centre for Climate Justice
+      <section id="about" className="bg-white py-40 text-center w-1/2 flex flex-col items-center gap-y-6">
+        
+        <div className="flex w-full gap-x-4 justify-center  items-center">
+          < FaSearch className="text-4xl text-indigo-900 " />
+          <h2 className="text-4xl font-bold text-indigo-800 mb-4 uppercase">Discover Who We Are</h2>
         </div>
-        <div className="relative">
-          < FaSearch className="text-5xl text-indigo-900 absolute bottom-8 mb-4 left-1/2 transform -translate-x-1/2" />
-          <h2 className="text-3xl font-bold text-indigo-800 mb-4 mt-24">Discover Who We Are</h2>
-        </div>
-        <p className="text-lg text-gray-700 mb-8">
+        <p className="text-lg  text-gray-700 mb-8">
           <p>Our vision aligns closely with the Loss and Damage objectives, </p>
           <p>and we are committed to excellence and accountability in implementation.</p>
           <p>Together, we aim to improve community resilience, health, and quality of life, </p>
@@ -139,44 +143,44 @@ function Home() {
       </section>
 
 
-<section id="projects" className="py-20 text-center md:grid md:grid-cols-3 md:gap-4 mx-auto pt-20 pb-20">
-  <div
-    className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
-  >
-    <FaInfoCircle className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
+      <section id="projects" className="py-20 text-center md:grid md:grid-cols-3 md:gap-4 mx-auto pt-20 pb-20">
+        <div
+          className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
+          style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
+        >
+          <FaInfoCircle className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
 
-    <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Our Projects</h2> {/* Adjusted margin-top */}
-    <p className="text-lg text-gray-700 mb-8">
-      Explore our initiatives and campaigns aimed at addressing pressing environmental issues such as deforestation, plastic pollution, and climate change.
-    </p>
-    <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">View Projects</Link>
-  </div>
+          <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Our Projects</h2> {/* Adjusted margin-top */}
+          <p className="text-lg text-gray-700 mb-8 h-40">
+            Explore our initiatives and campaigns aimed at addressing pressing environmental issues such as deforestation, plastic pollution, and climate change.
+          </p>
+          <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">View Projects</Link>
+        </div>
 
-  <div
-    className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
-  >
-    <FaHandsHelping className= "text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
-    <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Support Us</h2> {/* Adjusted margin-top */}
-    <p className="text-lg text-gray-700 mb-8">
-      Join us in our mission to create a sustainable future by supporting our work. Your donations help fund our projects and educational programs. Additionally, we offer exciting opportunities for volunteering. Whether you're passionate about planting trees, organizing community events, or spreading awareness, there's a place for you in our volunteer network.
-    </p>
-    <Link to="/donate" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">Get Involved</Link>
-  </div>
+        <div
+          className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
+          style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
+        >
+          <FaHandsHelping className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
+          <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Support Us</h2> {/* Adjusted margin-top */}
+          <p className="text-lg text-gray-700 mb-8">
+            Join us in our mission to create a sustainable future by supporting our work. Your donations help fund our projects and educational programs. Additionally, we offer exciting opportunities for volunteering. Whether you're passionate about planting trees, organizing community events, or spreading awareness, there's a place for you in our volunteer network.
+          </p>
+          <Link to="/donate" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">Get Involved</Link>
+        </div>
 
-  <div
-    className="bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
-  >
-    <FaEnvelope className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
-    <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Contact Us</h2> {/* Adjusted margin-top */}
-    <p className="text-lg text-gray-700 mb-8">
-      Have questions or want to collaborate? Reach out to us and let's work together to make a positive impact on the environment.
-    </p>
-    <Link to="/contact" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">Get in Touch</Link>
-  </div>
-</section>
+        <div
+          className="bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
+          style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
+        >
+          <FaEnvelope className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
+          <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Contact Us</h2> {/* Adjusted margin-top */}
+          <p className="text-lg text-gray-700 mb-8">
+            Have questions or want to collaborate? Reach out to us and let's work together to make a positive impact on the environment.
+          </p>
+          <Link to="/contact" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">Get in Touch</Link>
+        </div>
+      </section>
 
       <section id="news" className="bg-white-100 py-20 text-center w-1/2 mx-auto">
         <FaNewspaper className="text-5xl text-indigo-900 mx-auto mb-4" />

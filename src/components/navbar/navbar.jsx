@@ -20,16 +20,16 @@ const Navbar = () => {
                         <img src={f3} alt="YEW logo" className="h-20 mt-2" />
 
                         <div className="ml-2">
-                            <h3 className={`text-sm lg:text-lg font-bold text-indigo-800 italic`}>DZIKO CENTRE FOR CLIMATE JUSTICE</h3>
+                            <h3 className={`text-sm lg:text-lg font-bold text-indigo-800`}>DZIKO CENTRE FOR CLIMATE JUSTICE</h3>
                         </div>
                     </div>
                     <div className={`lg:flex lg:items-center ${isMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 bg-white w-full py-4 lg:py-0 lg:bg-transparent lg:relative lg:static lg:flex lg:justify-end lg:pt-0 lg:top-auto lg:left-auto`}>
-                        <NavLink to="/" className="text-indigo-800 italic font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Home</NavLink>
-                        <NavLink to="/about" className="text-indigo-800 italic font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">About</NavLink>
-                        <NavLink to="/projects" className="text-indigo-800 italic font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Projects</NavLink>
-                        <NavLink to="/News" className="text-indigo-800 italic font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">News</NavLink>
-                        <NavLink to="/contact" className="text-indigo-800 italic font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Contact</NavLink>
-                        <NavLink to="/support" className="text-white font-bold bg-indigo-800 italic hover:bg-indigo-400 py-2 px-3 lg:px-2 rounded-full transition duration-300 block lg:inline-block lg:mx-4 mb-4 lg:mb-4 text-xs lg:text-sm pl-2 flex items-center">
+                        <NavLink to="/" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Home</NavLink>
+                        <NavLink to="/about" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">About</NavLink>
+                        <NavLink to="/projects" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Projects</NavLink>
+                        <NavLink to="/News" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">News</NavLink>
+                        <NavLink to="/contact" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Contact</NavLink>
+                        <NavLink to="/support" className="text-white font-bold bg-indigo-800 hover:bg-indigo-400 py-2 px-3 lg:px-2 rounded-full transition duration-300 block lg:inline-block lg:mx-4 mb-4 lg:mb-4 text-xs lg:text-sm pl-2 flex items-center">
                             <span className="mr-2">Support</span>
                             <FaHandsHelping size={20} className="inline-block" />
                         </NavLink>
