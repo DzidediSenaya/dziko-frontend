@@ -139,7 +139,7 @@ const Support = () => {
             <div className="mb-12">
               <FaHandHolding className="text-5xl text-indigo-900 ml-2" />
               <h3 className="text-xl font-semibold mb-4 text-indigo-900">Volunteer with Us</h3> 
-              <p className="text-l italic mb-4">
+              <p className="text-l italic mb-10">
                 Join us in making a positive impact on the environment by
                 volunteering with our team. Your passion and dedication can
                 help drive our initiatives forward. Fill out the form below to

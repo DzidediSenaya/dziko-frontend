@@ -142,7 +142,7 @@ function Home() {
 <section id="projects" className="py-20 text-center md:grid md:grid-cols-3 md:gap-4 mx-auto pt-20 pb-20">
   <div
     className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(10cm + 100px)", paddingTop: "20px" }} // Adjusted height and padding
+    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
   >
     <FaInfoCircle className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
 
@@ -155,7 +155,7 @@ function Home() {
 
   <div
     className="mb-8 md:mb-0 bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(10cm + 100px)", paddingTop: "20px" }} // Adjusted height and padding
+    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
   >
     <FaHandsHelping className= "text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
     <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Support Us</h2> {/* Adjusted margin-top */}
@@ -167,7 +167,7 @@ function Home() {
 
   <div
     className="bg-indigo-100 relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    style={{ height: "calc(10cm + 100px)", paddingTop: "20px" }} // Adjusted height and padding
+    style={{ height: "calc(11cm + 102px)", paddingTop: "20px" }} // Adjusted height and padding
   >
     <FaEnvelope className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
     <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Contact Us</h2> {/* Adjusted margin-top */}
