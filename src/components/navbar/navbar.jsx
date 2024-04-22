@@ -29,7 +29,7 @@ const Navbar = () => {
                         <NavLink to="/projects" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Projects</NavLink>
                         <NavLink to="/News" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">News</NavLink>
                         <NavLink to="/contact" className="text-indigo-800 font-bold hover:text-indigo-500 transition duration-300 block lg:inline-block lg:mx-4 mb-4 text-xs lg:text-sm pl-2">Contact</NavLink>
-                        <NavLink to="/support" className="text-white font-bold bg-indigo-800 hover:bg-indigo-400 py-2 px-3 lg:px-2 rounded-full transition duration-300 block lg:inline-block lg:mx-4 mb-4 lg:mb-4 text-xs lg:text-sm pl-2 flex items-center">
+                        <NavLink to="/support" className="text-white font-bold bg-indigo-800 hover:bg-indigo-400 py-2 px-2 lg:px-2 rounded-full transition duration-300 block lg:inline-block lg:mx-4 mb-4 lg:mb-4 text-xs lg:text-sm pl-2 flex items-center">
                             <span className="mr-2">Support</span>
                             <FaHandsHelping size={20} className="inline-block" />
                         </NavLink>

@@ -20,7 +20,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/sage" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </div>

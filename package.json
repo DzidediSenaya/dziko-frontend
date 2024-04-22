@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "axios": "^1.6.8",
     "tailwindcss": "^3.4.1"
   }
 }

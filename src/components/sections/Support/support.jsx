@@ -52,7 +52,7 @@ const Support = () => {
       <section className="py-10" style={{ padding: "0 20px" }}>
         <div className="container mx-auto">
           <div className="relative flex items-center justify-center">
-            <h2 className="text-4xl font-bold mb-8 mt-4 lg:text-center pt-32 text-indigo-900 mb-8 mr-16">
+            <h2 className="text-4xl font-bold mb-8 mt-4 lg:text-center pt-32 text-indigo-900 mb-8 mr-16clea">
               Support Our Cause
             </h2>
           </div>

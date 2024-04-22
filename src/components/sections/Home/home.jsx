@@ -130,7 +130,6 @@ function Home() {
       <section id="about" className="bg-white py-40 text-center w-1/2 flex flex-col items-center gap-y-6">
         
         <div className="flex w-full gap-x-4 justify-center  items-center">
-          < FaSearch className="text-4xl text-indigo-900 " />
           <h2 className="text-4xl font-bold text-indigo-800 mb-4 uppercase">Discover Who We Are</h2>
         </div>
         <p className="text-lg  text-gray-700 mb-8">
@@ -139,7 +138,7 @@ function Home() {
           <p>Together, we aim to improve community resilience, health, and quality of life, </p>
           <p>promoting sustainability.</p>
         </p>
-        <Link to="/about" className="cta-btn bg-indigo-800 text-white py-2 px-6 rounded-full hover:bg-indigo-500 mb-8">Learn more</Link>
+        <Link to="/about" className="cta-btn bg-indigo-800 text-white py-2 px-6 rounded-full hover:bg-indigo-500 mb-16">Learn more</Link>
       </section>
 
 
@@ -154,7 +153,7 @@ function Home() {
           <p className="text-lg text-gray-700 mb-8 h-40">
             Explore our initiatives and campaigns aimed at addressing pressing environmental issues such as deforestation, plastic pollution, and climate change.
           </p>
-          <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">View Projects</Link>
+         <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500 mt-4">View Projects</Link>
         </div>
 
         <div
@@ -182,7 +181,7 @@ function Home() {
         </div>
       </section>
 
-      <section id="news" className="bg-white-100 py-20 text-center w-1/2 mx-auto">
+      <section id="news" className="bg-white-100 py-20 text-center w-1/2 mx-auto mt-16 mb-16">
         <FaNewspaper className="text-5xl text-indigo-900 mx-auto mb-4" />
         <h2 className="text-3xl font-bold text-indigo-800 mb-4">News and Events</h2>
         <p className="text-lg text-gray-700 mb-8">
