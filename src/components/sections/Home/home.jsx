@@ -12,8 +12,8 @@ import { FaInfoCircle, FaHandsHelping, FaEnvelope, FaNewspaper, FaSearch } from 
 function Home() {
   const [currentImage, setCurrentImage] = useState(0);
   const [autoRotate, setAutoRotate] = useState(true); // State to control automatic rotation
-  const [scrolling, setScrolling] = useState(false); // State to track scrolling
-  const [hovered, setHovered] = useState(false);
+  const [setScrolling] = useState(false); // State to track scrolling
+  const [] = useState(false);
 
   useEffect(() => {
     // Function to change image automatically
