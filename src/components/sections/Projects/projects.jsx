@@ -100,7 +100,7 @@ const ProjectGallery = ({ projects, deleteProject }) => {
                 <div />
                 <div className="w-4/5 lg:w-full mx-auto flex items-center justify-between"> {/* Set width to 80% on larger screens */}
                     <button style={{ margin: "0" }} className="gallery-btn prev sm:ml-0" onClick={prevProject}>&#10094;</button>
-                    <img className="gallery-img" src={projects[currentProjectIndex]?.image} alt={`Project ${currentProjectIndex + 1}`} />
+                    <img className="gallery-img" src={projects[currentProjectIndex]?.gallery} alt={`Project ${currentProjectIndex + 1}`} />
                     <button style={{ margin: "0" }} className="gallery-btn next sm:mr-0" onClick={nextProject}>&#10095;</button>
                 </div>
                 <div>

@@ -11,7 +11,7 @@ const Welcome = () => {
   useEffect(() => {
     const verifyCookie = async () => {
       await axios
-        .get(`http://localhost:4000/api/user/${params.userId}`, {
+        .get(`http://localhost:9000/api/user/${params.userId}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -34,7 +34,7 @@ const Welcome = () => {
 
   const Logout = async () => {
     await axios
-      .get(`http://localhost:4000/api/auth/logout`, {
+      .get(`http://localhost:9000/api/auth/logout`, {
         withCredentials: true,
       })
       .then(() => navigate("/login"))

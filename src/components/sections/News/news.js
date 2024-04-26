@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navbar from '../../navbar/navbar';
-import Footer from '../../footer/footer';
 
-export default function News() {
+const News = () => {
     const [news, setNews] = useState([]);
+    const [selectedArticle, setSelectedArticle] = useState(null);
 
     useEffect(() => {
         axios.get('/api/news')
@@ -12,23 +11,43 @@ export default function News() {
             .catch(error => console.error('Error fetching news:', error));
     }, []);
 
+    const handleArticleClick = (article) => {
+        setSelectedArticle(article);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedArticle(null);
+    };
+
     return (
         <div>
-            <Navbar />
-            <section>
-                <div style={{ marginTop: '300px' }}></div> {/* Add spacing here */}
-                <div className="p-4">
-                    <h1 className="text-2xl font-semibold mb-4 text-indigo-900">News and Events</h1>
-                    {/* Display news articles */}
-                    {news.map((article, index) => (
-                        <div key={index}>
-                            <h2>{article.title}</h2>
-                            <p>{article.content}</p>
-                        </div>
-                    ))}
+            <h1>Latest News</h1>
+            {news.map((article, index) => (
+                <div key={index} className="news-card" onClick={() => handleArticleClick(article)}>
+                    <h2>{article.title}</h2>
+                    <p>{article.description}</p>
+                    <span>{new Date(article.date).toLocaleDateString()}</span>
                 </div>
-            </section>
-            <Footer />
+            ))}
+            {selectedArticle && (
+                <NewsDetailsModal article={selectedArticle} onClose={handleCloseModal} />
+            )}
         </div>
     );
-}
+};
+
+const NewsDetailsModal = ({ article, onClose }) => {
+    return (
+        <div className="modal">
+            <div className="modal-content">
+                <span className="close-btn" onClick={onClose}>&times;</span>
+                <h2>{article.title}</h2>
+                <p>{article.description}</p>
+                <p>{article.content}</p> {/* Additional content */}
+                <span>{new Date(article.date).toLocaleDateString()}</span>
+            </div>
+        </div>
+    );
+};
+
+export default News;
