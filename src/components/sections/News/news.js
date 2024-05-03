@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from '../../navbar/navbar';
+import Footer from '../../footer/footer';
+
 
 const News = () => {
     const [news, setNews] = useState([]);
@@ -21,7 +24,9 @@ const News = () => {
 
     return (
         <div>
-            <h1>Latest News</h1>
+            <Navbar />
+            <div className="bg-indigo-900 py-4"></div>
+            <h2 className="text-3xl font-bold mb-6 mt-52 sm:max-w-50 mx-5 px-04 text-indigo-900">Latest News</h2>
             {news.map((article, index) => (
                 <div key={index} className="news-card" onClick={() => handleArticleClick(article)}>
                     <h2>{article.title}</h2>
@@ -32,6 +37,7 @@ const News = () => {
             {selectedArticle && (
                 <NewsDetailsModal article={selectedArticle} onClose={handleCloseModal} />
             )}
+            <Footer />
         </div>
     );
 };

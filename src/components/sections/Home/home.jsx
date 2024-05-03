@@ -7,16 +7,13 @@ import Footer from '../../footer/footer';
 import image1 from '../../../assets/images/image1.jpg';
 import image2 from '../../../assets/images/image2.jpg';
 import image3 from '../../../assets/images/image3.jpg';
-import { FaInfoCircle, FaHandsHelping, FaEnvelope, FaNewspaper } from 'react-icons/fa';
+import { FaInfoCircle, FaHandsHelping, FaEnvelope } from 'react-icons/fa';
 
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
   const [autoRotate, setAutoRotate] = useState(true); // State to control automatic rotation
-  const [setScrolling] = useState(false); // State to track scrolling
-  const [] = useState(false);
   const [news, setNews] = useState([]);
-
 
   useEffect(() => {
     // Function to change image automatically
@@ -43,11 +40,7 @@ export default function Home() {
   // Listen for scroll events to change navbar color
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      // Handle scroll event here
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -58,40 +51,11 @@ export default function Home() {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === 'ArrowLeft') {
-        const newIndex = (currentImage - 1 + images.length) % images.length;
-        setCurrentImage(newIndex);
-        setAutoRotate(false);
-      } else if (event.key === 'ArrowRight') {
-        const newIndex = (currentImage + 1) % images.length;
-        setCurrentImage(newIndex);
-        setAutoRotate(false);
-      }
+      // Handle key down event here
     };
 
     const handleTouchStart = (event) => {
-      const startX = event.touches[0].clientX;
-      const handleTouchMove = (moveEvent) => {
-        const moveX = moveEvent.touches[0].clientX;
-        const diff = startX - moveX;
-        if (diff > 50) {
-          const newIndex = (currentImage + 1) % images.length;
-          setCurrentImage(newIndex);
-          setAutoRotate(false);
-        } else if (diff < -50) {
-          const newIndex = (currentImage - 1 + images.length) % images.length;
-          setCurrentImage(newIndex);
-          setAutoRotate(false);
-        }
-      };
-
-      const handleTouchEnd = () => {
-        window.removeEventListener('touchmove', handleTouchMove);
-        window.removeEventListener('touchend', handleTouchEnd);
-      };
-
-      window.addEventListener('touchmove', handleTouchMove);
-      window.addEventListener('touchend', handleTouchEnd);
+      // Handle touch start event here
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -104,18 +68,18 @@ export default function Home() {
   }, [currentImage, autoRotate, images.length]);
 
   const HomePageNewsSection = () => {
-    const [news, setNews] = useState([]);
-
     useEffect(() => {
       axios.get('/api/news')
         .then(response => setNews(response.data.news.slice(0, 2))) // Limit to two news articles
         .catch(error => console.error('Error fetching news:', error));
     }, []);
+  };
 
-    const handleNewsCardClick = (id) => {
-      // Navigate to the respective news article page
-   
-    };
+  const handleNewsCardClick = (id) => {
+    // Navigate to the respective news article page
+    // You can define your navigation logic here
+    console.log(`Clicked on news card with id ${id}`);
+  };
 
     return (
       <div>
@@ -137,11 +101,14 @@ export default function Home() {
             ))}
           </div>
           <div className='absolute top-0 left-0 flex flex-col items-center justify-center h-full w-full bg-black/50 text-white'>
-            <div className="text-6xl font-bold flex flex-col gap-y-4 w-3/5 text-center items-center ">
-              <p>Welcome to Dziko Centre for</p>
-              <span className="bg-indigo-900 w-fit p-4"> Climate Justice</span>
+            <div className="text-4xl md:text-6xl font-bold flex flex-col gap-y-4 w-full md:w-3/5 text-center items-center">
+              <p className="text-2xl mt-8 md:text-2xl lg:text-2xl xl:text-3xl">Welcome to Dziko Centre for</p>
+              <span className="bg-indigo-900 px-4 py-2 md:px-6 md:py-4 lg:px-8 lg:py-6 xl:px-10 xl:py-8">
+                Climate Justice
+              </span>
             </div>
           </div>
+
         </section>
 
         <section id="about" className="bg-white py-40 text-center w-1/2 flex flex-col items-center gap-y-6">
@@ -167,10 +134,10 @@ export default function Home() {
             <FaInfoCircle className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
 
             <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Our Projects</h2> {/* Adjusted margin-top */}
-            <p className="text-lg text-gray-700 mb-8 h-40">
+            <p className="text-lg text-gray-700 mb-16 h-40">
               Explore our initiatives and campaigns aimed at addressing pressing environmental issues such as deforestation, plastic pollution, and climate change.
             </p>
-            <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500 mt-4">View Projects</Link>
+            <Link to="/projects" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">View Projects</Link>
           </div>
 
           <div
@@ -191,7 +158,7 @@ export default function Home() {
           >
             <FaEnvelope className="text-5xl text-indigo-900 absolute top-4 left-1/2 transform -translate-x-1/2" />
             <h2 className="text-3xl font-bold text-indigo-900 mb-4 mt-16">Contact Us</h2> {/* Adjusted margin-top */}
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-36">
               Have questions or want to collaborate? Reach out to us and let's work together to make a positive impact on the environment.
             </p>
             <Link to="/contact" className="cta-btn bg-indigo-900 text-white py-2 px-6 rounded-full hover:bg-indigo-500">Get in Touch</Link>
@@ -199,12 +166,12 @@ export default function Home() {
         </section>
 
         <section className="bg-white py-20 text-center w-1/2 mx-auto mt-16 mb-16">
-          <FaNewspaper className="text-5xl text-indigo-900 mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-indigo-800 mb-4">News and Events</h2>
           <p className="text-lg text-gray-700 mb-8">
             Stay Updated with Our Latest Initiatives and Environmental Campaigns.
           </p>
           <div className="grid grid-cols-2 gap-8">
+            <HomePageNewsSection />
             {news.map((article, index) => (
               <div key={index} className="news-card" onClick={() => handleNewsCardClick(article.id)}>
                 <h3 className="text-lg font-semibold mb-2">{article.title}</h3>
@@ -218,5 +185,4 @@ export default function Home() {
         <Footer />
       </div>
     );
-  }
   }

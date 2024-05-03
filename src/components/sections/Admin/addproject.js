@@ -36,7 +36,7 @@ const AddProjectForm = ({ onProjectAdded }) => {
         });
 
         try {
-            const response = await axios.post('/api/projects', formData, {
+            const response = await axios.post('http://localhost:9000/api/projects', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

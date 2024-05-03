@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import Navbar from "../../navbar/navbar";
 import Footer from "../../footer/footer";
-import VolunteerForm from "./volunteer.jsx";
 import { FaHandHolding, FaDonate } from 'react-icons/fa';
 
 const Support = () => {
   const [showDonationForm, setShowDonationForm] = useState(false);
-  const [showVolunteerForm, setShowVolunteerForm] = useState(false);
   const [donationAmount, setDonationAmount] = useState("");
   const [donorEmail, setDonorEmail] = useState("");
   const [paymentSuccess, setPaymentSuccess] = useState(false);
@@ -37,13 +35,8 @@ const Support = () => {
 
   const toggleDonationForm = () => {
     setShowDonationForm(!showDonationForm);
-    setShowVolunteerForm(false); // Hide volunteer form when toggling donation form
   };
 
-  const toggleVolunteerForm = () => {
-    setShowVolunteerForm(!showVolunteerForm);
-    setShowDonationForm(false); // Hide donation form when toggling volunteer form
-  };
 
   return (
     <div>
@@ -131,7 +124,7 @@ const Support = () => {
               )}
               <button
                 onClick={toggleDonationForm}
-                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mt-2"
+                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mt-6"
               >
                 {showDonationForm ? "Hide Donation Form" : "Show Donation Form"}
               </button>
@@ -145,13 +138,13 @@ const Support = () => {
                 help drive our initiatives forward. Fill out the form below to
                 express your interest, and we'll get back to you soon.
               </p>
-              {showVolunteerForm && <VolunteerForm />}
               <button
-                onClick={toggleVolunteerForm}
-                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mt-2 mb-6 "
+                onClick={() => window.open("https://forms.gle/vdRJMWwhBw9WJKcp7", "_blank")}
+                className="bg-indigo-900 hover:bg-indigo-400 text-white px-4 py-2 rounded-md transition duration-300 mb-6"
               >
-                {showVolunteerForm ? "Hide Volunteer Form" : "Show Volunteer Form"}
+                Volunteer Now
               </button>
+
             </div>
           </div>
         </div>

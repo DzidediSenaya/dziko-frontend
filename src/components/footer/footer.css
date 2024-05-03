@@ -6,6 +6,11 @@
     margin: 0 auto 3rem;
 }
 
+.custom-image-size {
+    height: calc(2 * 18rem);
+}  
+
+
 /* Media Query for Small Devices */
 @media screen and (max-width: 600px) {
     .permalinks {

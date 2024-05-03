@@ -76,7 +76,7 @@ const About = () => {
 
             <section id="vision" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Vision {showIcon === 'eye' && <FaEye className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Vision <FaEye className="inline" /></h2>
                     <p className="text-lg text-gray-700">
                         Our vision is a world where every young person is empowered to take action to protect and preserve the
                         environment. We envision a future where sustainability is not just a buzzword but a way of life, and where every individual
@@ -87,7 +87,7 @@ const About = () => {
 
             <section id="approach" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8 text-indigo-800">
-                    <h2 className="text-2xl font-bold mb-2">Our Approach {showIcon === 'users' && <FaUsers className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2">Our Approach <FaUsers className="inline" /></h2>
                     <p className="text-lg text-gray-700">
                         At DZIKO CCJ, we take a multi-faceted approach to environmental activism and education. We
                         believe in the power of education to inspire change, so we work with schools, communities, and youth organizations to
@@ -145,7 +145,7 @@ const About = () => {
 
             <section id="partners" className="max-w-4xl mx-auto px-4 py-8">
                 <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Partners {showIcon === 'user-friends' && <FaUserFriends className="inline animate-bounce" />}</h2>
+                    <h2 className="text-2xl font-bold mb-2 text-indigo-800">Our Partners <FaUserFriends className="inline" /></h2>
                     <p className="text-lg text-gray-700">
                         DZIKO CCJ collaborates with a range of partners, including businesses, non-profits, government agencies,
                         and educational institutions, to maximize our impact and reach. Together, we work towards common goals and

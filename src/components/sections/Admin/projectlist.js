@@ -10,7 +10,7 @@ const ProjectList = ({ onProjectDeleted }) => {
         // Fetch projects from the backend when the component mounts
         const fetchProjects = async () => {
             try {
-                const response = await axios.get('/api/projects');
+                const response = await axios.get('http://localhost:9000/api/projects');
                 setProjects(response.data);
                 setLoading(false);
             } catch (error) {
@@ -24,7 +24,7 @@ const ProjectList = ({ onProjectDeleted }) => {
 
     const handleDeleteProject = async (projectId) => {
         try {
-            await axios.delete(`/api/projects/${projectId}`);
+            await axios.delete(`http://localhost:9000/api/projects/${projectId}`);
             // Update project list after deletion
             setProjects(projects.filter(project => project._id !== projectId));
             onProjectDeleted(); // Notify parent component that a project has been deleted

@@ -11,6 +11,9 @@ import Admin from './components/sections/Admin/admin';
 import Welcome from './components/sections/Admin/auth';
 import Login from './components/sections/Admin/login';
 import ProjectList from './components/sections/Admin/projectlist';
+import Signup from './components/sections/Admin/signup';
+import EventList from './components/sections/Admin/eventlist';
+import NewsList from './components/sections/Admin/newslist'
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path="/sage/:userId" element={<Welcome />} />
           <Route path="/saige" element={<Login />} />
           <Route path="/allprojects" element={<ProjectList />} />
+          <Route path="/allevents" element={<EventList />} />
+          <Route path="/allnews" element={<NewsList />} />
+          <Route path="/saiges" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </div>
